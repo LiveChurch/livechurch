@@ -1,0 +1,57 @@
+LiveChurch Non-Commercial Copyleft License (LC-NCCL) v1.0
+
+Copyright (c) 2026 LiveChurch. All rights reserved except as granted below.
+
+1. GRANT
+Permission is granted, free of charge, to any person obtaining a copy of this
+software and associated files (the "Software") to use, copy, modify and
+distribute the Software, subject to the conditions below.
+
+2. NON-COMMERCIAL USE ONLY
+The Software and any modification or derivative of it ("Modified Version") may
+be used, modified and distributed for NON-COMMERCIAL purposes only. Use by
+churches, ministries and other non-profit religious organizations for their own
+services is non-commercial. "Commercial" means any use primarily intended for
+commercial advantage or monetary compensation, including selling, sublicensing,
+renting, offering the Software or a Modified Version as a paid product or paid
+hosted service, or bundling it in a paid product. Commercial use requires prior
+written permission from the copyright holder.
+
+3. MANDATORY OPEN SOURCE FOR MODIFICATIONS (COPYLEFT)
+If you modify the Software in any way, then any Modified Version that you
+distribute, publish, or otherwise make available to anyone other than yourself
+(including by download, installation on other people's computers, or hosted
+access) MUST:
+  a) have its complete corresponding source code, including all of your
+     changes, published publicly at no charge (for example in a public
+     repository), no later than the moment the Modified Version is first made
+     available;
+  b) be licensed as a whole under this same license, without adding any
+     further restriction;
+  c) clearly mark your changes and state that the work was modified.
+Keeping a Modified Version closed-source while making it available to others is
+a violation of this license.
+
+4. ATTRIBUTION
+The copyright notice and this license text must be included in all copies or
+substantial portions of the Software. The LiveChurch name must not be used to
+imply endorsement of a Modified Version.
+
+5. THIRD-PARTY CONTENT
+This license covers the Software's source code only. Bible texts, lyrics
+(provided by LRCLIB), images and other third-party content remain subject to
+their own licenses and terms. You are solely responsible for holding the rights
+to any content you display or distribute using the Software.
+
+6. TERMINATION
+Any violation of these terms automatically terminates your rights under this
+license.
+
+7. NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

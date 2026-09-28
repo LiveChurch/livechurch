@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiveChurch</title>
+    <style>
+      :root {
+        /* Microsoft Office dark theme style colors */
+        --bg-color: #202020;
+        --sidebar-bg: #fa6100; /* Brand Primary */
+        --text-color: #ffffff;
+        --subtext-color: #a0a0a0;
+      }
+
+      * {
+        -webkit-user-select: none !important;
+      }
+
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Segoe UI", "Roboto", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        user-select: none;
+        cursor: default;
+        display: flex;
+        /* No border because window is transparent/frameless usually handles its own or OS shadow */
+      }
+
+      .artwork {
+        width: 240px;
+        background: linear-gradient(135deg, #fa6100 0%, #e05800 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Subtle pattern overlay on the orange part (optional) */
+      .artwork::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+        transform: rotate(30deg);
+      }
+      
+      .logo-icon {
+        width: 100px;
+        height: auto;
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+        z-index: 2;
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        position: relative;
+      }
+
+      .app-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+      }
+
+      .app-subtitle {
+        font-size: 14px;
+        color: var(--subtext-color);
+        margin-top: 4px;
+        font-weight: 400;
+      }
+
+      .loading-container {
+        margin-top: auto;
+        /* Push to bottom of content area */
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        right: 40px;
+      }
+
+      .loading-text {
+        font-size: 12px;
+        color: var(--subtext-color);
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      /* Windows-style dots loader */
+      .loader-dots {
+        display: flex;
+        gap: 4px;
+        height: 4px;
+      }
+
+      .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--text-color);
+        animation: fade 1.4s infinite ease-in-out both;
+      }
+
+      .dot:nth-child(1) { animation-delay: -0.32s; }
+      .dot:nth-child(2) { animation-delay: -0.16s; }
+      .dot:nth-child(3) { animation-delay: 0s; }
+      .dot:nth-child(4) { animation-delay: 0.16s; }
+      .dot:nth-child(5) { animation-delay: 0.32s; }
+
+      @keyframes fade {
+        0%, 80%, 100% { opacity: 0; }
+        40% { opacity: 1; }
+      }
+
+      .version {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 11px;
+        color: #505050;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="artwork">
+      <!-- Icon/Logo on the colored panel -->
+      <img src="logo.png" draggable="false" alt="" class="logo-icon" onerror="this.style.display='none'" />
+    </div>
+    
+    <div class="content">
+      <div class="version">v0.1.0</div>
+      
+      <h1 class="app-title">LiveChurch</h1>
+      <p class="app-subtitle">Apresentações para igrejas</p>
+
+      <div class="loading-container">
+        <span class="loading-text" id="status-text">Iniciando...</span>
+        <div class="loader-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Simulate loading status updates
+      const messages = [
+        "Carregando configurações...",
+        "Inicializando interface...",
+        "Preparando bibliotecas...",
+        "Quase pronto..."
+      ];
+      let i = 0;
+      const statusText = document.getElementById('status-text');
+      
+      setInterval(() => {
+        if (i < messages.length) {
+          statusText.textContent = messages[i];
+          i++;
+        }
+      }, 800);
+    </script>
+  </body>
+</html>

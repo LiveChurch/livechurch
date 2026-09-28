@@ -1,0 +1,21 @@
+{
+  "name": "livechurch-update-server",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "CLI de release do LiveChurch: gera, assina e publica os releases no GitHub (projeto separado do app).",
+  "scripts": {
+    "release": "bun src/cli/main.ts",
+    "keys": "bun src/cli/main.ts keys",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@electron/asar": "^4.3.0",
+    "bytenode": "^1.7.0",
+    "javascript-obfuscator": "^5.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "~5.9.3"
+  }
+}

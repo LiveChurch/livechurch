@@ -1,0 +1,54 @@
+/*
+ * "Glass" variant of PrimeVue's Button, following the same pattern as the native variants
+ * (`p-button-outlined`, `p-button-text`): apply `class="p-button-glass"`.
+ * Neutral, flat translucent background (no border, glow or shadow); the Button's `severity`
+ * (`p-button-warn`, `p-button-danger`...) only colors the icon/text.
+ *
+ * Lives in the `primevue-variants` layer, after `primevue` (wins over Aura) and before
+ * `utilities` (Tailwind classes can still adjust the button).
+ */
+@layer primevue-variants {
+  .p-button.p-button-glass {
+    --glass-fill: rgb(0 0 0 / 0.06);
+    --glass-fill-hover: rgb(0 0 0 / 0.1);
+    --glass-fill-active: rgb(0 0 0 / 0.14);
+    --glass-ink: var(--app-foreground);
+
+    color: var(--glass-ink);
+    background: var(--glass-fill);
+    border: none;
+    box-shadow: none;
+    backdrop-filter: blur(12px);
+    transition: background 0.15s;
+  }
+
+  .dark-mode .p-button.p-button-glass {
+    --glass-fill: rgb(255 255 255 / 0.1);
+    --glass-fill-hover: rgb(255 255 255 / 0.16);
+    --glass-fill-active: rgb(255 255 255 / 0.22);
+  }
+
+  .p-button.p-button-glass:not(:disabled):hover {
+    color: var(--glass-ink);
+    background: var(--glass-fill-hover);
+    border: none;
+  }
+
+  .p-button.p-button-glass:not(:disabled):active {
+    color: var(--glass-ink);
+    background: var(--glass-fill-active);
+    border: none;
+  }
+
+  .p-button-glass.p-button-success {
+    --glass-ink: var(--app-success);
+  }
+
+  .p-button-glass.p-button-warn {
+    --glass-ink: var(--app-warning);
+  }
+
+  .p-button-glass.p-button-danger {
+    --glass-ink: var(--app-danger);
+  }
+}

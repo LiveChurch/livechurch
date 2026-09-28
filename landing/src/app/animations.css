@@ -1,0 +1,73 @@
+/* All motion only runs when the user has not asked for reduced motion. */
+
+/* Beam of light running along the main button's border */
+@property --beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Without motion, the button's border stays as a fixed, subtle outline. */
+.beam-border {
+  background: color-mix(in srgb, var(--fg) 30%, transparent);
+}
+
+@keyframes beam-spin {
+  to {
+    --beam-angle: 360deg;
+  }
+}
+
+/* Hymn board plaque flipping */
+@keyframes slat-flip {
+  from {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Entrance on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .beam-border {
+    background: conic-gradient(
+      from var(--beam-angle),
+      transparent 0 70%,
+      var(--fg) 85%,
+      transparent 100%
+    );
+    animation: beam-spin 3.2s linear infinite;
+  }
+
+  .slat {
+    transform-origin: top;
+    animation: slat-flip 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-delay: var(--slat-delay, 0ms);
+  }
+
+  .caret {
+    animation: caret-blink 1s steps(1) infinite;
+  }
+}

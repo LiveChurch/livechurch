@@ -1,0 +1,59 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "app",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "dev:web", "--", "--port", "5180"],
+      "port": 5180
+    },
+    {
+      "name": "app-alt",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "dev:web", "--", "--port", "5181"],
+      "port": 5181
+    },
+    {
+      "name": "app-3",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "dev:web", "--", "--port", "5182"],
+      "port": 5182
+    },
+    {
+      "name": "src-solid",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "--cwd", "src-solid", "dev:web"],
+      "port": 5174
+    },
+    {
+      "name": "landing",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "--cwd", "landing", "dev"],
+      "port": 5174
+    },
+    {
+      "name": "landing-2",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "dev:landing2"],
+      "port": 5175
+    },
+    {
+      "name": "promo-video",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "--cwd", "promo-video", "dev", "--", "--port", "3033"],
+      "port": 3033
+    },
+    {
+      "name": "promo-video-v2",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "--cwd", "promo-video-v2", "dev", "--", "--port", "3034"],
+      "port": 3034
+    },
+    {
+      "name": "search-reel",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "hyperframes@0.8.78", "preview", "videos/search-reel", "--port", "3040", "--no-open", "--foreground"],
+      "port": 3040
+    }
+  ]
+}

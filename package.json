@@ -1,0 +1,125 @@
+{
+  "name": "livechurch",
+  "private": true,
+  "description": "LiveChurch: controle de projeção para igrejas",
+  "author": "LiveChurch",
+  "version": "0.0.11",
+  "type": "module",
+  "main": "build/electron/loader.cjs",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"bun scripts/runElectron.ts\"",
+    "dev:web": "vite",
+    "build": "vite build",
+    "check": "vue-tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
+    "preview": "vite preview",
+    "start": "bun scripts/runElectron.ts",
+    "release:version": "bun run --cwd update-server release version",
+    "release:asar": "bun run --cwd update-server release asar",
+    "release:exe:win": "bun run --cwd update-server release exe --platform win32",
+    "release:exe:linux": "bun run --cwd update-server release exe --platform linux",
+    "release:publish": "bun run --cwd update-server release publish",
+    "release:win": "bun run --cwd update-server release all --platform win32",
+    "release:linux": "bun run --cwd update-server release all --platform linux",
+    "landing:screenshots": "bun scripts/landingScreenshots/main.mjs"
+  },
+  "dependencies": {
+    "@fontsource/material-icons": "^5.3.0",
+    "@fontsource/oxanium": "^5.3.0",
+    "@huggingface/transformers": "^4.3.0",
+    "@primevue/icons": "^4.5.4",
+    "@primevue/themes": "^4.5.4",
+    "bytenode": "^1.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "dexie": "^4.4.2",
+    "font-list": "^2.1.0",
+    "lodash": "^4.18.1",
+    "pinia": "^4.0.3",
+    "primeicons": "^8.0.1",
+    "primevue": "^4",
+    "tailwind-merge": "^3.4.1",
+    "uuid": "^13.0.0",
+    "vue": "^3.6.0-rc.9",
+    "vue-draggable-plus": "^0.6.1",
+    "vue-i18n": "^11.4.12"
+  },
+  "devDependencies": {
+    "@modyfi/vite-plugin-yaml": "^1.1.1",
+    "@tailwindcss/vite": "^4.2.0",
+    "@types/lodash": "^4.17.25",
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "@vue/tsconfig": "^0.9.1",
+    "concurrently": "^9.2.1",
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12",
+    "js-yaml": "^5.4.2",
+    "playwright-core": "^1.63.0",
+    "sass-embedded": "^1.104.1",
+    "tailwindcss": "^4.2.0",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.3.11"
+  },
+  "build": {
+    "appId": "com.livechurch.app",
+    "productName": "LiveChurch",
+    "directories": {
+      "buildResources": "public",
+      "output": "release"
+    },
+    "icon": "icon.png",
+    "files": [
+      "build/electron/loader.cjs",
+      {
+        "from": "build/bundle",
+        "to": "bundle"
+      },
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "public/icon.png",
+        "to": "icon.png"
+      }
+    ],
+    "win": {
+      "icon": "icon.ico",
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": "x64"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "language": "1046",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "LiveChurch",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "linux": {
+      "icon": "icons",
+      "desktop": {
+        "entry": {
+          "Name": "LiveChurch",
+          "Icon": "livechurch",
+          "StartupWMClass": "livechurch"
+        }
+      },
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility"
+    }
+  }
+}
