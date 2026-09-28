@@ -1,5 +1,6 @@
 "use client";
 
+import { BasePathUtils } from "@/core/utils/BasePathUtils";
 import Link from "next/link";
 import { NavLinks, SiteConfig } from "@/core/constants/SiteConfig";
 import { useI18n } from "@/core/i18n/I18nProvider";
@@ -22,7 +23,7 @@ export function SiteHeader({ onHome = true, hideDownload }: SiteHeaderProps) {
     <header className="fixed inset-x-0 top-0 z-40 border-b border-edge/70 bg-page/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-2">
         <Link href={onHome ? "#" : homePath} className="flex min-h-11 items-center gap-2.5" aria-label={t("nav.homeLabel")}>
-          <img src="/logo.png" alt="" className="size-8" />
+          <img src={BasePathUtils.url("/logo.png")} alt="" className="size-8" />
           <span className="hidden font-display text-xl min-[400px]:inline">{SiteConfig.name}</span>
         </Link>
 

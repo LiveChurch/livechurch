@@ -1,3 +1,4 @@
+import { BasePathUtils } from "@/core/utils/BasePathUtils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: LocaleParams): Promise<Metada
     title: t("meta.title"),
     description: t("meta.description"),
     openGraph: { title: t("meta.title"), description: t("meta.ogDescription"), type: "website" },
-    icons: { icon: "/logo.png" },
+    icons: { icon: BasePathUtils.url("/logo.png") },
   };
 }
 
@@ -42,7 +43,7 @@ export default async function LocaleLayout({ children, params }: LocaleParams & 
     // data-theme is set by theme-init.js before hydration, hence the suppressHydrationWarning.
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <script src="/theme-init.js" />
+        <script src={BasePathUtils.url("/theme-init.js")} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href={FONTS_URL} rel="stylesheet" />

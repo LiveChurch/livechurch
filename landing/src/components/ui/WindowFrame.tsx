@@ -1,5 +1,6 @@
 "use client";
 
+import { BasePathUtils } from "@/core/utils/BasePathUtils";
 import { useI18n } from "@/core/i18n/I18nProvider";
 
 interface WindowFrameProps {
@@ -11,7 +12,7 @@ interface WindowFrameProps {
 
 export function WindowFrame({ name, alt, eager }: WindowFrameProps) {
   const { locale } = useI18n();
-  const base = `/screenshots/${locale}/${name}`;
+  const base = BasePathUtils.url(`/screenshots/${locale}/${name}`);
 
   return (
     <div className="overflow-hidden rounded-xl border border-edge bg-surface shadow-2xl shadow-black/25">

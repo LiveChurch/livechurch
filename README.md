@@ -8,7 +8,7 @@
 
 Bible, hymns, lyrics, agenda, slides and themes: all in one desktop app.
 
-[Website](https://livechurch.app) · [Download](https://github.com/LiveChurch/livechurch-releases/releases) · [License](#license)
+[Website](https://livechurch.github.io/livechurch/) · [Download](https://github.com/LiveChurch/livechurch-releases/releases) · [License](#license)
 
 <img src="landing/public/screenshots/en/bible-live.png" alt="LiveChurch main screen" />
 
@@ -100,15 +100,15 @@ Grab the latest installer for your platform from the
 - **Windows**: `livechurch-setup-<version>-win32-x64.exe`
 - **Linux**: `livechurch-setup-<version>-linux-x64.AppImage`
 
-Or visit the [website](https://livechurch.app) for a guided download. The app updates itself after installation.
+Or visit the [website](https://livechurch.github.io/livechurch/) for a guided download. The app updates itself after installation.
 
 ## Run from source
 
 Requirements: [Bun](https://bun.sh) and Node.js.
 
 ```bash
-git clone https://github.com/LiveChurch/livechurch-opensource.git
-cd livechurch-opensource
+git clone https://github.com/LiveChurch/livechurch.git
+cd livechurch
 bun install
 ```
 
@@ -154,7 +154,7 @@ Contributions are welcome! Pull requests are more than welcome, whether it is a 
 2. Follow the code conventions described in [CONVENTIONS.md](CONVENTIONS.md) and run `bun run check` before opening the pull request.
 3. Open a pull request describing what changed and why.
 
-Found a bug or have an idea? [Open an issue](https://github.com/LiveChurch/livechurch-opensource/issues). By contributing, you agree that your contribution is licensed under the [project license](#license).
+Found a bug or have an idea? [Open an issue](https://github.com/LiveChurch/livechurch/issues). By contributing, you agree that your contribution is licensed under the [project license](#license).
 
 ## Content and copyright
 
@@ -189,6 +189,6 @@ The full text is in the [LICENSE](LICENSE) file. Because this license restricts 
 
 <div align="center">
 
-Made with care for the Church. Visit [livechurch.app](https://livechurch.app)
+Made with care for the Church. Visit [livechurch.github.io/livechurch](https://livechurch.github.io/livechurch/)
 
 </div>

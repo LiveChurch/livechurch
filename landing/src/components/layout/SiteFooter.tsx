@@ -1,5 +1,6 @@
 "use client";
 
+import { BasePathUtils } from "@/core/utils/BasePathUtils";
 import Link from "next/link";
 import { NavLinks, SiteConfig } from "@/core/constants/SiteConfig";
 import { useI18n } from "@/core/i18n/I18nProvider";
@@ -13,7 +14,7 @@ export function SiteFooter({ onHome = true }: { onHome?: boolean }) {
     <footer className="border-t border-edge">
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-5 py-12 md:flex-row md:items-center">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="" className="size-9" />
+          <img src={BasePathUtils.url("/logo.png")} alt="" className="size-9" />
           <div className="flex flex-col">
             <span className="font-display text-lg">{SiteConfig.name}</span>
             <span className="text-sm text-dim">{t("common.tagline")}</span>
