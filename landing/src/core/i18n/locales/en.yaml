@@ -1,0 +1,192 @@
+meta:
+  title: "LiveChurch: free presentation software for church services"
+  description: "Free presentation software for church services. Song lyrics, Bible, free-form slides and event schedule on the big screen. For Windows and Linux."
+  ogDescription: "Lyrics, verses, announcements and schedule on the big screen. Completely free."
+  downloadTitle: "Download LiveChurch: free for Windows and Linux"
+  downloadDescription: "Download LiveChurch, free presentation software for church services. Pick your system (Windows or Linux) and version and download straight from GitHub."
+nav:
+  features: "Features"
+  free: "Free"
+  faq: "FAQ"
+  sectionsLabel: "Page sections"
+  footerLabel: "Footer"
+  homeLabel: "LiveChurch, home"
+  themeToLight: "Use light theme"
+  themeToDark: "Use dark theme"
+  languageLabel: "Language"
+  github: "GitHub"
+  githubLabel: "LiveChurch on GitHub"
+common:
+  downloadLabel: "Download for free"
+  download: "Download"
+  platforms: "Windows and Linux"
+  tagline: "Free presentation software"
+  beta: "Beta"
+  openSource: "Open source"
+hero:
+  title: "Presentation software for your service,"
+  titleAccent: "completely free"
+  text: "LiveChurch puts song lyrics, Bible verses, announcements and the church schedule on the big screen. You search, press Enter and the slide appears, in the look your church picks."
+  note: "The Bible works offline"
+  screenshotAlt: "LiveChurch window with Isaiah 5:6 selected and shown on the big screen"
+demo:
+  ariaLabel: "Demo: the user types a search and the slide appears on the big screen"
+  nothingLive: "Nothing live"
+  waiting: "Waiting"
+  live: "Live"
+  items:
+    - icon: "book"
+      query: "john 3:16"
+      resultTitle: "John 3:16"
+      resultSubtitle: "Go to verse"
+      slideReference: "John 3:16"
+      slideText: "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
+      slideFooter: "King James Version (KJV)"
+    - icon: "calendar"
+      query: "events"
+      resultTitle: "Generate events (This week)"
+      resultSubtitle: "Quick action"
+      slideReference: "Weekly Agenda"
+      slideText: "Bible Study\nWednesday, 7:30 PM"
+facts:
+  label: "Summary"
+  items:
+    - value: "3"
+      label: "Bible versions"
+    - value: "Offline"
+      label: "Bible and slides"
+featuresSection:
+  title: "What the software does"
+  subtitle: "Lyrics, verses, announcements and schedule in a single program."
+  alsoIncludes: "Also includes"
+  moreTitle: "Tools to run the service"
+free:
+  label: "Price"
+  title: "Every feature in the same download."
+  intro: "Download, install and use. The free download includes:"
+  included:
+    - "Lyrics of any song, split into slides"
+    - "Bible in 3 versions (KJV, WEB, ASV)"
+    - "Themes, animated backgrounds and effects"
+    - "Free-form slides, announcement templates and schedule"
+    - "Service playlists with images and videos"
+    - "Projection on a big screen or projector"
+    - "Open source, available on GitHub"
+  price: "$0.00"
+  priceLabel: "Price: zero dollars"
+  boardCaption: "Free"
+finalCta:
+  title: "Download LiveChurch for free."
+  text: "Install it on the big-screen computer and have lyrics and Bible ready before Sunday."
+features:
+  search:
+    label: "Search"
+    title: "Search lyrics and verses"
+    text: "One search bar finds song lyrics, Bible verses and actions such as creating announcements and generating the schedule."
+    bullets:
+      - "Lyrics of any song, split into slides (needs internet)"
+      - "“john 3:16” jumps straight to the verse"
+      - "“create” and “events” open announcements and the schedule"
+    imageAlt: "LiveChurch search bar suggesting Psalm 23"
+  themes:
+    label: "Themes"
+    title: "Pick the look of your slides"
+    text: "Each slide uses a theme with a background image, font, gradient, transition and effects such as embers. Switch themes with one click or let the program pick a random one."
+    bullets:
+      - "Image and animated backgrounds"
+      - "Font, size and text position"
+      - "Slide transitions and effects"
+    imageAlt: "LiveChurch theme editor with backgrounds and slide preview"
+  freeSlides:
+    label: "Free-form slides"
+    title: "Create slides from any text"
+    text: "Write announcements, prayers or the day’s program. A blank line separates one slide from the next, and the slide list shows the result as you type."
+    bullets:
+      - "Announcements, prayers and program"
+      - "Instant slide preview"
+      - "Full-screen images and videos"
+    imageAlt: "Free-form slide editor previewing how the text splits into slides"
+  calendar:
+    label: "Schedule"
+    title: "Generate the events slide"
+    text: "Add one-off, weekly or monthly events. Then choose the period and the program creates slides with the date, time and title of each event."
+    bullets:
+      - "Weekly and monthly events"
+      - "This week, next week or this month"
+      - "Type “events” in the search bar to generate"
+    imageAlt: "LiveChurch calendar with weekly events"
+  bible:
+    label: "Bible"
+    title: "Bible on the big screen"
+    text: "King James Version, World English Bible and American Standard Version come built in. Pick a verse and it becomes a slide, ready to show."
+    bullets:
+      - "Browse by chapter without leaving the slide"
+      - "Works offline"
+    image: "bible-live"
+    imageAlt: "Bible verse shown on the big screen by LiveChurch"
+moreFeatures:
+  playlist:
+    title: "Service playlist"
+    text: "Build the order of service with songs, verses, announcements, images and videos. Everything is saved on your computer."
+  preview:
+    title: "Preview before showing"
+    text: "Check the slide in the preview and only then click Show. What is live appears next to it."
+  projector:
+    title: "Big screen or projector"
+    text: "Pick the monitor in the footer and the projection opens full screen, while you control everything from the main window."
+  templates:
+    title: "Announcement templates"
+    text: "Create a template with fields like #Name and, for each announcement, fill in only the fields."
+  quickEdit:
+    title: "Quick edit"
+    text: "Fix a lyric or a text on the spot with Ctrl+E, during the service."
+  colorMode:
+    title: "Light and dark theme"
+    text: "Switch between the two modes inside the program."
+faq:
+  title: "Frequently asked questions"
+  items:
+    - question: "Is it really free?"
+      answer: "Yes. LiveChurch is completely free and every feature comes in the same download."
+    - question: "Do I need internet during the service?"
+      answer: "The Bible (KJV, WEB and ASV), free-form slides and the schedule work offline. The internet is used to fetch lyrics of other songs and the theme background images."
+    - question: "Can I project the lyrics of any song?"
+      answer: "Yes. Search by title and the program fetches the lyrics from the internet and splits them into slides, which you can still edit. This depends on the lyrics service being available."
+    - question: "Which computers does it run on?"
+      answer: "Windows and Linux."
+    - question: "Can I project on a TV or projector?"
+      answer: "Yes. Connect the screen, pick the monitor in the program’s footer and the projection opens full screen on it, while you control everything from the main window."
+    - question: "Can a volunteer with no experience operate it?"
+      answer: "Everything starts in the search bar: you type, pick the result and check the slide preview before sending it to the big screen."
+    - question: "In which language is the program?"
+      answer: "The interface comes in Portuguese, English and Spanish, and each language has its own Bible versions. The screenshots on this page show the Portuguese interface."
+    - question: "Is LiveChurch open source?"
+      answer: "Yes. The project is open source and lives on GitHub, at github.com/LiveChurch."
+    - question: "Is the program still in beta?"
+      answer: "Yes, and it may have instabilities. We recommend testing before the service."
+download:
+  title: "Download LiveChurch"
+  intro: "Completely free. Pick your system and version and the download starts straight from GitHub, no sign-up."
+  system:
+    label: "System"
+    ariaLabel: "Operating system"
+    detected: "Detected"
+    unsupported: "There is no version for this device’s system yet. Download it on a Windows or Linux computer."
+  platforms:
+    windows:
+      fileKind: "Installer (.exe)"
+      installHint: "Run the installer. Since it is not digitally signed, Windows may show a warning: click More info and then Run anyway."
+    linux:
+      fileKind: "AppImage"
+      installHint: "Give the file execute permission (chmod +x) and open it with a double click or from the terminal."
+  version:
+    label: "Version"
+    ariaLabel: "Version"
+    latest: "Latest"
+  file:
+    label: "Download"
+    loading: "Fetching versions from GitHub..."
+    button: "Download for {platform} v{version}"
+    noInstaller: "There is no installer published for this system yet."
+    loadError: "Could not fetch the versions right now."
+    allReleases: "See all versions on GitHub"

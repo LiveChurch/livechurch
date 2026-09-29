@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.next
+build
+release
+.vercel
+.env*.local
+
+# Env files
+.env
+.env.*
+!.env.example
+.thumbnails/
+.snapshots/
+# Mídia gerada / pesada (não versionar)
+videos/*/renders/
+videos/*/snapshots/
+videos/*/.thumbnails/
+videos/*/.media/
+videos/*/.hyperframes/
+site/public/*.mp4
+tiktok/out/
+tiktok/recordings-raw/
+tiktok/public/recordings/

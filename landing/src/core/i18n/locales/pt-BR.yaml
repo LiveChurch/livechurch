@@ -1,0 +1,202 @@
+meta:
+  title: "LiveChurch: programa de apresentação grátis"
+  description: "Programa de apresentação grátis para o culto. Letras de música, Bíblia, Harpa Cristã, slides livres e agenda no telão. Para Windows e Linux."
+  ogDescription: "Letras, versículos, avisos e agenda no telão. Totalmente grátis."
+  downloadTitle: "Baixar o LiveChurch: grátis para Windows e Linux"
+  downloadDescription: "Baixe o LiveChurch, programa de apresentação grátis para o culto. Escolha o sistema (Windows ou Linux) e a versão e baixe direto do GitHub."
+nav:
+  features: "Recursos"
+  free: "Grátis"
+  faq: "Perguntas"
+  sectionsLabel: "Seções da página"
+  footerLabel: "Rodapé"
+  homeLabel: "LiveChurch, início"
+  themeToLight: "Usar tema claro"
+  themeToDark: "Usar tema escuro"
+  languageLabel: "Idioma"
+  github: "GitHub"
+  githubLabel: "LiveChurch no GitHub"
+common:
+  downloadLabel: "Baixar grátis"
+  download: "Baixar"
+  platforms: "Windows e Linux"
+  tagline: "Programa de apresentação grátis"
+  beta: "Beta"
+  openSource: "Open source"
+hero:
+  title: "Apresentação para o culto,"
+  titleAccent: "totalmente grátis"
+  text: "O LiveChurch exibe no telão letras de música, versículos, hinos da Harpa, avisos e a agenda da igreja. Você busca, dá Enter e o slide aparece, com o visual que a sua igreja escolher."
+  note: "Bíblia e Harpa funcionam offline"
+  screenshotAlt: "Tela do LiveChurch com Isaías 5:6 selecionado e exibido no telão"
+demo:
+  ariaLabel: "Demonstração: o usuário digita uma busca e o slide aparece no telão"
+  nothingLive: "Nada no ar"
+  waiting: "Aguardando"
+  live: "No ar"
+  items:
+    - icon: "book"
+      query: "joao 3:16"
+      resultTitle: "João 3:16"
+      resultSubtitle: "Ir para versículo"
+      slideReference: "João 3:16"
+      slideText: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."
+      slideFooter: "Almeida Recebida (AR)"
+    - icon: "music"
+      query: "chuvas de graça"
+      resultTitle: "1 - Chuvas de Graça"
+      resultSubtitle: "Harpa Cristã"
+      slideReference: "1 - Chuvas de Graça"
+      slideText: "Deus prometeu com certeza\nChuvas de graça mandar;\nEle nos dá fortaleza,\nE ricas bênçãos sem par"
+    - icon: "calendar"
+      query: "agenda"
+      resultTitle: "Gerar eventos (Esta Semana)"
+      resultSubtitle: "Ação rápida"
+      slideReference: "Agenda semanal"
+      slideText: "Estudo Bíblico\nQuarta-feira, 19h30"
+facts:
+  label: "Resumo"
+  items:
+    - value: "640"
+      label: "hinos da Harpa Cristã"
+    - value: "3"
+      label: "versões da Bíblia"
+    - value: "Offline"
+      label: "Bíblia, Harpa e slides"
+featuresSection:
+  title: "O que o programa faz"
+  subtitle: "Letras, versículos, avisos e agenda em um programa só."
+  alsoIncludes: "Também inclui"
+  moreTitle: "Ferramentas para operar o culto"
+free:
+  label: "Preço"
+  title: "Todos os recursos no mesmo download."
+  intro: "Baixe, instale e use. O download gratuito inclui:"
+  included:
+    - "Letra de qualquer música, dividida em slides"
+    - "Bíblia em 3 versões (Almeida Recebida, Bíblia Livre, Almeida Revista e Corrigida)"
+    - "640 hinos da Harpa Cristã"
+    - "Temas, fundos animados e efeitos"
+    - "Slides livres, avisos com modelo e agenda"
+    - "Playlists do culto com imagens e vídeos"
+    - "Projeção em telão ou projetor"
+    - "Código aberto, disponível no GitHub"
+  price: "R$ 0,00"
+  priceLabel: "Preço: zero reais"
+  boardCaption: "Grátis"
+finalCta:
+  title: "Baixe o LiveChurch grátis."
+  text: "Instale no computador do telão e deixe letras, Bíblia e Harpa prontas antes do domingo."
+features:
+  search:
+    label: "Pesquisa"
+    title: "Busque letras, versículos e hinos"
+    text: "Uma barra de busca encontra letras de músicas, versículos da Bíblia, hinos da Harpa e ações como criar avisos e gerar a agenda."
+    bullets:
+      - "Letra de qualquer música, dividida em slides (precisa de internet)"
+      - "“joao 3:16” leva direto ao versículo"
+      - "Nome ou número do hino da Harpa"
+      - "“criar” e “agenda” abrem avisos e eventos"
+    imageAlt: "Barra de busca do LiveChurch sugerindo Salmos 23"
+  themes:
+    label: "Temas"
+    title: "Escolha o visual dos slides"
+    text: "Cada slide usa um tema com imagem de fundo, fonte, gradiente, transição e efeitos como brasas. Troque o tema com um clique ou deixe o programa escolher um aleatório."
+    bullets:
+      - "Fundos de imagem e fundos animados"
+      - "Fonte, tamanho e posição do texto"
+      - "Transições entre slides e efeitos"
+    imageAlt: "Editor de temas do LiveChurch com fundos e prévia do slide"
+  freeSlides:
+    label: "Slides livres"
+    title: "Crie slides com qualquer texto"
+    text: "Escreva avisos, orações ou a programação do dia. Uma linha em branco separa um slide do outro, e a lista de slides mostra o resultado enquanto você digita."
+    bullets:
+      - "Avisos, orações e programação"
+      - "Prévia dos slides na hora"
+      - "Imagens e vídeos em tela cheia"
+    imageAlt: "Editor de slides livres com prévia da divisão em slides"
+  calendar:
+    label: "Agenda"
+    title: "Gere o slide de eventos"
+    text: "Cadastre eventos únicos, semanais ou mensais. Depois escolha o período e o programa cria os slides com data, horário e título de cada evento."
+    bullets:
+      - "Eventos semanais e mensais"
+      - "Esta semana, próxima semana ou este mês"
+      - "Digite “agenda” na busca para gerar"
+    imageAlt: "Calendário do LiveChurch com eventos semanais"
+  bible:
+    label: "Bíblia e Harpa"
+    image: "harpa-live"
+    title: "Bíblia e Harpa Cristã"
+    text: "Almeida Recebida, Bíblia Livre, Almeida Revista e Corrigida e os 640 hinos da Harpa Cristã já vêm dentro do programa. Cada estrofe e o coro viram slides na ordem certa."
+    bullets:
+      - "Navegue por capítulo sem sair do slide"
+      - "Funciona offline"
+    imageAlt: "Hino da Harpa Cristã exibido no telão pelo LiveChurch"
+moreFeatures:
+  playlist:
+    title: "Playlist do culto"
+    text: "Monte a ordem do culto com hinos, versículos, avisos, imagens e vídeos. Tudo fica salvo no seu computador."
+  preview:
+    title: "Prévia antes de exibir"
+    text: "Confira o slide na prévia e só então clique em Exibir. O que está no ar aparece ao lado."
+  projector:
+    title: "Telão ou projetor"
+    text: "Escolha o monitor no rodapé e a projeção abre em tela cheia, enquanto você controla tudo na tela principal."
+  templates:
+    title: "Modelos de aviso"
+    text: "Crie um modelo com campos como #Nome e, a cada aviso, preencha só os campos."
+  quickEdit:
+    title: "Edição rápida"
+    text: "Corrija uma letra ou um texto na hora, com Ctrl+E, durante o culto."
+  colorMode:
+    title: "Tema claro e escuro"
+    text: "Alterne entre os dois modos no próprio programa."
+faq:
+  title: "Perguntas frequentes"
+  items:
+    - question: "É grátis mesmo?"
+      answer: "Sim. O LiveChurch é totalmente gratuito e todos os recursos vêm no mesmo download."
+    - question: "Preciso de internet durante o culto?"
+      answer: "A Bíblia (Almeida Recebida, Bíblia Livre e Almeida Revista e Corrigida), a Harpa Cristã, os slides livres e a agenda funcionam offline. A internet é usada para buscar letras de outras músicas e para as imagens de fundo dos temas."
+    - question: "Posso projetar a letra de qualquer música?"
+      answer: "Sim. Busque pelo título e o programa traz a letra da internet e a divide em slides, que você ainda pode editar. Isso depende do serviço de letras estar disponível."
+    - question: "Funciona em quais computadores?"
+      answer: "Windows e Linux."
+    - question: "Consigo projetar em TV ou projetor?"
+      answer: "Sim. Conecte o telão, escolha o monitor no rodapé do programa e a projeção abre em tela cheia nele, enquanto você controla tudo na tela principal."
+    - question: "Um voluntário sem experiência consegue operar?"
+      answer: "Tudo começa na barra de busca: você digita, escolhe o resultado e confere a prévia do slide antes de mandar para o telão."
+    - question: "Em que idioma está o programa?"
+      answer: "A interface está em português, inglês e espanhol, e cada idioma tem as suas versões da Bíblia. A Harpa Cristã existe só no português."
+    - question: "O LiveChurch é open source?"
+      answer: "Sim. O projeto é open source e fica no GitHub, em github.com/LiveChurch."
+    - question: "O programa ainda está em beta?"
+      answer: "Sim, e pode apresentar instabilidades. Recomendamos testar antes do culto."
+download:
+  title: "Baixe o LiveChurch"
+  intro: "Totalmente grátis. Escolha o sistema e a versão e o download começa direto do GitHub, sem cadastro."
+  system:
+    label: "Sistema"
+    ariaLabel: "Sistema operacional"
+    detected: "Detectado"
+    unsupported: "Ainda não há versão para o sistema deste dispositivo. Baixe em um computador com Windows ou Linux."
+  platforms:
+    windows:
+      fileKind: "Instalador (.exe)"
+      installHint: "Execute o instalador. Como ele não tem assinatura digital, o Windows pode mostrar um aviso: clique em Mais informações e depois em Executar assim mesmo."
+    linux:
+      fileKind: "AppImage"
+      installHint: "Dê permissão de execução ao arquivo (chmod +x) e abra-o com duplo clique ou pelo terminal."
+  version:
+    label: "Versão"
+    ariaLabel: "Versão"
+    latest: "Mais recente"
+  file:
+    label: "Download"
+    loading: "Buscando as versões no GitHub..."
+    button: "Baixar para {platform} v{version}"
+    noInstaller: "Ainda não há instalador publicado para este sistema."
+    loadError: "Não foi possível buscar as versões agora."
+    allReleases: "Ver todas as versões no GitHub"

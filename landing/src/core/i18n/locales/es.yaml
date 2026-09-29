@@ -1,0 +1,192 @@
+meta:
+  title: "LiveChurch: programa de presentación gratis para el culto"
+  description: "Programa de presentación gratis para el culto. Letras de canciones, Biblia, diapositivas libres y agenda en la pantalla. Para Windows y Linux."
+  ogDescription: "Letras, versículos, avisos y agenda en la pantalla. Totalmente gratis."
+  downloadTitle: "Descargar LiveChurch: gratis para Windows y Linux"
+  downloadDescription: "Descarga LiveChurch, programa de presentación gratis para el culto. Elige el sistema (Windows o Linux) y la versión y descarga directo desde GitHub."
+nav:
+  features: "Funciones"
+  free: "Gratis"
+  faq: "Preguntas"
+  sectionsLabel: "Secciones de la página"
+  footerLabel: "Pie de página"
+  homeLabel: "LiveChurch, inicio"
+  themeToLight: "Usar tema claro"
+  themeToDark: "Usar tema oscuro"
+  languageLabel: "Idioma"
+  github: "GitHub"
+  githubLabel: "LiveChurch en GitHub"
+common:
+  downloadLabel: "Descargar gratis"
+  download: "Descargar"
+  platforms: "Windows y Linux"
+  tagline: "Programa de presentación gratis"
+  beta: "Beta"
+  openSource: "Código abierto"
+hero:
+  title: "Presentación para el culto,"
+  titleAccent: "totalmente gratis"
+  text: "LiveChurch muestra en la pantalla letras de canciones, versículos, avisos y la agenda de la iglesia. Buscas, presionas Enter y aparece la diapositiva, con el aspecto que tu iglesia elija."
+  note: "La Biblia funciona sin conexión"
+  screenshotAlt: "Ventana de LiveChurch con Isaías 5:6 seleccionado y mostrado en la pantalla"
+demo:
+  ariaLabel: "Demostración: el usuario escribe una búsqueda y la diapositiva aparece en la pantalla"
+  nothingLive: "Nada al aire"
+  waiting: "En espera"
+  live: "Al aire"
+  items:
+    - icon: "book"
+      query: "juan 3:16"
+      resultTitle: "Juan 3:16"
+      resultSubtitle: "Ir al versículo"
+      slideReference: "Juan 3:16"
+      slideText: "Porque de tal manera amó Dios al mundo, que ha dado á su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna."
+      slideFooter: "Reina-Valera 1909 (RV1909)"
+    - icon: "calendar"
+      query: "agenda"
+      resultTitle: "Generar eventos (Esta semana)"
+      resultSubtitle: "Acción rápida"
+      slideReference: "Agenda semanal"
+      slideText: "Estudio bíblico\nMiércoles, 19:30"
+facts:
+  label: "Resumen"
+  items:
+    - value: "3"
+      label: "versiones de la Biblia"
+    - value: "Offline"
+      label: "Biblia y diapositivas"
+featuresSection:
+  title: "Qué hace el programa"
+  subtitle: "Letras, versículos, avisos y agenda en un solo programa."
+  alsoIncludes: "También incluye"
+  moreTitle: "Herramientas para operar el culto"
+free:
+  label: "Precio"
+  title: "Todas las funciones en la misma descarga."
+  intro: "Descarga, instala y usa. La descarga gratuita incluye:"
+  included:
+    - "Letra de cualquier canción, dividida en diapositivas"
+    - "Biblia en 3 versiones (Reina-Valera 1909, Biblia en Español Sencillo, Versión Biblia Libre)"
+    - "Temas, fondos animados y efectos"
+    - "Diapositivas libres, avisos con plantilla y agenda"
+    - "Listas del culto con imágenes y videos"
+    - "Proyección en pantalla o proyector"
+    - "Código abierto, disponible en GitHub"
+  price: "$ 0,00"
+  priceLabel: "Precio: cero"
+  boardCaption: "Gratis"
+finalCta:
+  title: "Descarga LiveChurch gratis."
+  text: "Instálalo en el computador de la pantalla y deja letras y Biblia listas antes del domingo."
+features:
+  search:
+    label: "Búsqueda"
+    title: "Busca letras y versículos"
+    text: "Una barra de búsqueda encuentra letras de canciones, versículos de la Biblia y acciones como crear avisos y generar la agenda."
+    bullets:
+      - "Letra de cualquier canción, dividida en diapositivas (requiere internet)"
+      - "“juan 3:16” lleva directo al versículo"
+      - "“crear” y “agenda” abren avisos y la agenda"
+    imageAlt: "Barra de búsqueda de LiveChurch sugiriendo Salmos 23"
+  themes:
+    label: "Temas"
+    title: "Elige el aspecto de las diapositivas"
+    text: "Cada diapositiva usa un tema con imagen de fondo, fuente, degradado, transición y efectos como brasas. Cambia el tema con un clic o deja que el programa elija uno al azar."
+    bullets:
+      - "Fondos de imagen y fondos animados"
+      - "Fuente, tamaño y posición del texto"
+      - "Transiciones entre diapositivas y efectos"
+    imageAlt: "Editor de temas de LiveChurch con fondos y vista previa de la diapositiva"
+  freeSlides:
+    label: "Diapositivas libres"
+    title: "Crea diapositivas con cualquier texto"
+    text: "Escribe avisos, oraciones o el programa del día. Una línea en blanco separa una diapositiva de otra, y la lista de diapositivas muestra el resultado mientras escribes."
+    bullets:
+      - "Avisos, oraciones y programa"
+      - "Vista previa al instante"
+      - "Imágenes y videos a pantalla completa"
+    imageAlt: "Editor de diapositivas libres con vista previa de la división en diapositivas"
+  calendar:
+    label: "Agenda"
+    title: "Genera la diapositiva de eventos"
+    text: "Registra eventos únicos, semanales o mensuales. Luego elige el período y el programa crea las diapositivas con la fecha, la hora y el título de cada evento."
+    bullets:
+      - "Eventos semanales y mensuales"
+      - "Esta semana, la próxima semana o este mes"
+      - "Escribe “agenda” en la búsqueda para generar"
+    imageAlt: "Calendario de LiveChurch con eventos semanales"
+  bible:
+    label: "Biblia"
+    title: "La Biblia en la pantalla"
+    text: "Reina-Valera 1909, Biblia en Español Sencillo y Versión Biblia Libre ya vienen dentro del programa. Elige un versículo y se convierte en una diapositiva, lista para mostrar."
+    bullets:
+      - "Navega por capítulo sin salir de la diapositiva"
+      - "Funciona sin conexión"
+    image: "bible-live"
+    imageAlt: "Versículo de la Biblia mostrado en la pantalla por LiveChurch"
+moreFeatures:
+  playlist:
+    title: "Lista del culto"
+    text: "Arma el orden del culto con canciones, versículos, avisos, imágenes y videos. Todo queda guardado en tu computador."
+  preview:
+    title: "Vista previa antes de mostrar"
+    text: "Revisa la diapositiva en la vista previa y solo entonces haz clic en Mostrar. Lo que está al aire aparece al lado."
+  projector:
+    title: "Pantalla o proyector"
+    text: "Elige el monitor en el pie del programa y la proyección se abre a pantalla completa, mientras controlas todo desde la ventana principal."
+  templates:
+    title: "Plantillas de aviso"
+    text: "Crea una plantilla con campos como #Nombre y, en cada aviso, completa solo los campos."
+  quickEdit:
+    title: "Edición rápida"
+    text: "Corrige una letra o un texto al momento, con Ctrl+E, durante el culto."
+  colorMode:
+    title: "Tema claro y oscuro"
+    text: "Alterna entre los dos modos dentro del programa."
+faq:
+  title: "Preguntas frecuentes"
+  items:
+    - question: "¿Es gratis de verdad?"
+      answer: "Sí. LiveChurch es totalmente gratuito y todas las funciones vienen en la misma descarga."
+    - question: "¿Necesito internet durante el culto?"
+      answer: "La Biblia (Reina-Valera 1909, Biblia en Español Sencillo y Versión Biblia Libre), las diapositivas libres y la agenda funcionan sin conexión. Internet se usa para buscar letras de otras canciones y las imágenes de fondo de los temas."
+    - question: "¿Puedo proyectar la letra de cualquier canción?"
+      answer: "Sí. Busca por el título y el programa trae la letra de internet y la divide en diapositivas, que aún puedes editar. Esto depende de que el servicio de letras esté disponible."
+    - question: "¿En qué computadores funciona?"
+      answer: "Windows y Linux."
+    - question: "¿Puedo proyectar en un televisor o proyector?"
+      answer: "Sí. Conecta la pantalla, elige el monitor en el pie del programa y la proyección se abre a pantalla completa en él, mientras controlas todo desde la ventana principal."
+    - question: "¿Un voluntario sin experiencia puede operarlo?"
+      answer: "Todo empieza en la barra de búsqueda: escribes, eliges el resultado y revisas la vista previa de la diapositiva antes de enviarla a la pantalla."
+    - question: "¿En qué idioma está el programa?"
+      answer: "La interfaz está en portugués, inglés y español, y cada idioma tiene sus propias versiones de la Biblia. Las capturas de esta página muestran la interfaz en portugués."
+    - question: "¿LiveChurch es de código abierto?"
+      answer: "Sí. El proyecto es de código abierto y está en GitHub, en github.com/LiveChurch."
+    - question: "¿El programa sigue en beta?"
+      answer: "Sí, y puede presentar inestabilidades. Recomendamos probarlo antes del culto."
+download:
+  title: "Descarga LiveChurch"
+  intro: "Totalmente gratis. Elige el sistema y la versión y la descarga empieza directo desde GitHub, sin registro."
+  system:
+    label: "Sistema"
+    ariaLabel: "Sistema operativo"
+    detected: "Detectado"
+    unsupported: "Aún no hay versión para el sistema de este dispositivo. Descárgalo en un computador con Windows o Linux."
+  platforms:
+    windows:
+      fileKind: "Instalador (.exe)"
+      installHint: "Ejecuta el instalador. Como no tiene firma digital, Windows puede mostrar un aviso: haz clic en Más información y luego en Ejecutar de todas formas."
+    linux:
+      fileKind: "AppImage"
+      installHint: "Da permiso de ejecución al archivo (chmod +x) y ábrelo con doble clic o desde la terminal."
+  version:
+    label: "Versión"
+    ariaLabel: "Versión"
+    latest: "Más reciente"
+  file:
+    label: "Descarga"
+    loading: "Buscando las versiones en GitHub..."
+    button: "Descargar para {platform} v{version}"
+    noInstaller: "Aún no hay un instalador publicado para este sistema."
+    loadError: "No se pudieron buscar las versiones ahora."
+    allReleases: "Ver todas las versiones en GitHub"

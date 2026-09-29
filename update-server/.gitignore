@@ -1,0 +1,7 @@
+node_modules
+# Chave privada que assina os releases: nunca versionar.
+keys/
+# Cópia local dos binários enviados ao GitHub (`releases/<versão>/`).
+releases/
+
+.vercel
