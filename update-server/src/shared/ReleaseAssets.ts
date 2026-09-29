@@ -9,8 +9,8 @@ export const ReleaseAssets = {
   setupFileName: (version: string, platform: string, extension: string) =>
     `livechurch-setup-${version}-${platform}${extension}`,
 
-  /** Versioned manifest at the repository root, e.g. `win32-x64.json`. */
-  manifestPath: (platform: string) => `${platform}.json`,
+  /** Versioned manifest in the repository's `releases/` folder, e.g. `releases/win32-x64.json`. */
+  manifestPath: (platform: string) => `releases/${platform}.json`,
 
   downloadUrl: (repo: string, version: string, name: string) =>
     `https://github.com/${repo}/releases/download/${ReleaseAssets.tag(version)}/${encodeURIComponent(name)}`,

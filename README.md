@@ -8,7 +8,7 @@
 
 Bible, hymns, lyrics, agenda, slides and themes: all in one desktop app.
 
-[Website](https://livechurch.github.io/livechurch/) · [Download](https://github.com/LiveChurch/livechurch-releases/releases) · [License](#license)
+[Website](https://livechurch.github.io/livechurch/) · [Download](https://github.com/LiveChurch/livechurch/releases) · [License](#license)
 
 <img src="landing/public/screenshots/en/bible-live.png" alt="LiveChurch main screen" />
 
@@ -95,7 +95,7 @@ If the chapter or verse does not exist, the overlay tells you before adding anyt
 ## Download
 
 Grab the latest installer for your platform from the
-[releases page](https://github.com/LiveChurch/livechurch-releases/releases):
+[releases page](https://github.com/LiveChurch/livechurch/releases):
 
 - **Windows**: `livechurch-setup-<version>-win32-x64.exe`
 - **Linux**: `livechurch-setup-<version>-linux-x64.AppImage`
