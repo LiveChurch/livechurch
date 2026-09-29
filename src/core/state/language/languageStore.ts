@@ -16,6 +16,8 @@ export const useLanguageStore = defineStore("language", () => {
   });
 
   const actions = {
+    /** True until the user picks a language (or dismisses the first-run prompt). */
+    needsSetup: () => localStorage.getItem(StorageService.keys.locale) === null,
     setLocale(next: AppLocale) {
       locale.value = next;
       I18n.setLocale(next);

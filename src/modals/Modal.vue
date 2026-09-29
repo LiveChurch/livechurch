@@ -22,8 +22,10 @@ const props = withDefaults(
     className?: string; // extra classes of the content container (p-dialog)
     contentClassName?: string; // extra classes of the body wrapper
     showCloseButton?: boolean;
+    /** False forces an explicit action: outside click and ESC no longer close it. */
+    dismissable?: boolean;
   }>(),
-  { showCloseButton: true },
+  { showCloseButton: true, dismissable: true },
 );
 
 const handle = inject(MODAL_HANDLE, null);
@@ -41,7 +43,8 @@ defineExpose({ hide });
     modal
     :closable="false"
     :show-header="false"
-    :dismissable-mask="true"
+    :dismissable-mask="dismissable"
+    :close-on-escape="dismissable"
     :pt="{ mask: 'p-4', content: 'p-0 flex min-h-0 flex-1 flex-col' }"
     :class="
       cn(
