@@ -1,5 +1,5 @@
-/** Root of the releases repository; it holds one `<platform>.json` per platform (`update-server`). */
-const MANIFEST_BASE_URL = "https://raw.githubusercontent.com/LiveChurch/livechurch-releases/main";
+/** `releases/` folder of the repository on the default branch; it holds one `<platform>.json` per platform (`update-server`). */
+const MANIFEST_BASE_URL = "https://raw.githubusercontent.com/LiveChurch/livechurch/main/releases";
 
 export const UpdateConfig = {
   /** In tests, `LIVECHURCH_UPDATE_URL` points to another folder with the same `<platform>.json` files. */

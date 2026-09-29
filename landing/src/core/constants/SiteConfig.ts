@@ -1,5 +1,5 @@
 const GITHUB_ORG = "LiveChurch";
-const RELEASES_REPO = `${GITHUB_ORG}/livechurch-releases`;
+const RELEASES_REPO = `${GITHUB_ORG}/livechurch`;
 
 export const SiteConfig = {
   name: "LiveChurch",

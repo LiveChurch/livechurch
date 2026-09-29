@@ -1,7 +1,7 @@
 import { spawnSync } from "node:child_process";
 
-/** Public releases repository: binaries on GitHub Releases and one `<platform>.json` per platform. */
-const REPO = process.env.LIVECHURCH_RELEASES_REPO || "LiveChurch/livechurch-releases";
+/** Public repository: binaries on GitHub Releases and one `releases/<platform>.json` per platform. */
+const REPO = process.env.LIVECHURCH_RELEASES_REPO || "LiveChurch/livechurch";
 
 function spawnGh(args: string[], stdout: "inherit" | "pipe" | "ignore") {
   const result = spawnSync("gh", args, { stdio: ["ignore", stdout, stdout], encoding: "utf8" });

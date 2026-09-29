@@ -2,10 +2,10 @@
 
 Projeto separado do app (tem o próprio `package.json`): a CLI que gera, assina e publica os releases. Não há
 servidor: tudo fica no repositório público
-[LiveChurch/livechurch-releases](https://github.com/LiveChurch/livechurch-releases):
+[LiveChurch/livechurch](https://github.com/LiveChurch/livechurch):
 
 - **binários** no GitHub Releases (um release `v<versão>` por versão, com os arquivos de cada plataforma);
-- **um manifesto por plataforma** versionado na raiz (`win32-x64.json`, `linux-x64.json`...), que o app baixa.
+- **um manifesto por plataforma** versionado em `releases/` (`releases/win32-x64.json`, `releases/linux-x64.json`...), que o app baixa.
 
 ## Comandos (da raiz do app)
 
@@ -30,7 +30,7 @@ bun run release:linux [versão] [--full] [--notes "texto"]
 Uma vez por máquina: `cd update-server && bun install`; para gerar as chaves que assinam os releases,
 `bun run --cwd update-server keys` (ver [Segurança](#segurança)).
 
-O app baixa `https://raw.githubusercontent.com/LiveChurch/livechurch-releases/main/<plataforma>.json`
+O app baixa `https://raw.githubusercontent.com/LiveChurch/livechurch/main/releases/<plataforma>.json`
 (`electron/update/UpdateConfig.ts`; em testes, `LIVECHURCH_UPDATE_URL` troca a base da URL). Ele confere 10 s
 depois de abrir e a cada hora, e há "Ajuda → Verificar atualizações". O GitHub guarda esse arquivo em cache por
 até 5 min, então um release novo pode demorar esse tempo para aparecer.
@@ -38,7 +38,7 @@ até 5 min, então um release novo pode demorar esse tempo para aparecer.
 ## Configuração (uma vez por máquina)
 
 `gh` (GitHub CLI: `winget install GitHub.cli` no Windows) e `gh auth login`, com uma conta com permissão de
-escrita em `LiveChurch/livechurch-releases`. O repositório precisa ter ao menos um commit, senão o GitHub não
+escrita em `LiveChurch/livechurch`. O repositório precisa ter ao menos um commit, senão o GitHub não
 cria releases. Outro repositório: `LIVECHURCH_RELEASES_REPO=dono/repo` (e troque `MANIFEST_BASE_URL` no app).
 
 ## Os passos
@@ -52,7 +52,7 @@ cria releases. Outro repositório: `LIVECHURCH_RELEASES_REPO=dono/repo` (e troqu
    se o projeto estiver no OneDrive, onde o electron-builder falha com EPERM; `LIVECHURCH_INSTALLER_DIR`
    escolhe outra pasta). Só roda no próprio sistema.
 4. **`release:publish`**: confere o `gh`, envia ao release `v<versão>` (criando-o se preciso) o que foi gerado
-   para a versão atual e, só depois, grava `<plataforma>.json` no repositório com um commit direto na `main`:
+   para a versão atual e, só depois, grava `releases/<plataforma>.json` no repositório com um commit direto na `main`:
    - `livechurch-setup-<versão>-<plataforma>.exe|.AppImage`: instalador, para quem ainda não tem o app;
    - `livechurch-code-<versão>-<plataforma>.asar`: atualização dos apps instalados.
 
@@ -76,14 +76,14 @@ bun run release:linux current             # mantém a 0.0.10 e acrescenta o Linu
 
 As notas do release no GitHub são as do primeiro envio; `--notes` sempre vai para o manifesto da plataforma.
 
-## Manifesto (`<plataforma>.json`)
+## Manifesto (`releases/<plataforma>.json`)
 
 ```json
 {
   "platform": "win32-x64",
   "version": "0.0.7",
   "type": "code",
-  "bundleUrl": "https://github.com/LiveChurch/livechurch-releases/releases/download/v0.0.7/livechurch-code-0.0.7-win32-x64.asar",
+  "bundleUrl": "https://github.com/LiveChurch/livechurch/releases/download/v0.0.7/livechurch-code-0.0.7-win32-x64.asar",
   "sha256": "…",
   "signature": "…",
   "size": 19407973,
