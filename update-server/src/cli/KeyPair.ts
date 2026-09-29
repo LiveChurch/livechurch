@@ -42,7 +42,8 @@ export const KeyPair = {
       .export({ type: "spki", format: "pem" })
       .toString();
 
-    const appModule = fs.readFileSync(ServerPaths.appPublicKeyFile, "utf8");
+    // Git on Windows may check the file out with CRLF; the PEM must match regardless of line endings.
+    const appModule = fs.readFileSync(ServerPaths.appPublicKeyFile, "utf8").replace(/\r\n/g, "\n");
     if (!appModule.includes(derivedPublicKey)) {
       throw new Error(
         "A chave pública embutida no app não corresponde à chave privada. Rode `bun run keys --force`.",
