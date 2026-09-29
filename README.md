@@ -146,6 +146,16 @@ bun run build     # production build
 
 - [Next.js](https://nextjs.org/) with [React](https://react.dev/) and Tailwind CSS, deployed on Vercel
 
+## Contributing
+
+Contributions are welcome! Pull requests are more than welcome, whether it is a bug fix, a new feature, a translation or an improvement to the docs.
+
+1. Fork the repository and create a branch for your change.
+2. Follow the code conventions described in [CONVENTIONS.md](CONVENTIONS.md) and run `bun run check` before opening the pull request.
+3. Open a pull request describing what changed and why.
+
+Found a bug or have an idea? [Open an issue](https://github.com/LiveChurch/livechurch-opensource/issues). By contributing, you agree that your contribution is licensed under the [project license](#license).
+
 ## Content and copyright
 
 ### Bibles
