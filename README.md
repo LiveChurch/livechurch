@@ -35,7 +35,7 @@ Bible, hymns, lyrics, agenda, slides and themes: all in one desktop app.
 - Free-form slides from any text: a blank line separates one slide from the next, with an instant preview.
 - Announcement templates with fields like `#Name`.
 - Full-screen images and videos.
-
+ 
 **Run the service**
 - Service playlists with songs, verses, announcements, images and videos, saved locally.
 - Preview the slide before sending it live, with the live slide shown next to it.
