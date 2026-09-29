@@ -1,0 +1,12 @@
+{
+  "platform": "win32-x64",
+  "version": "0.0.13",
+  "type": "code",
+  "bundleUrl": "https://github.com/LiveChurch/livechurch/releases/download/v0.0.13/livechurch-code-0.0.13-win32-x64.asar",
+  "sha256": "7d7e7ae52d5601a9fc55564f0b299e2b047a4583dbbd604100a193e3bf422d81",
+  "signature": "6jIzBN2MSr/Y8yzPtfF2gALlYof+PY535R7PfydImUWY9vJ70EfM+vUBy/tVQo8nrbl6O2eNyFUcc4TCxl52Cg==",
+  "size": 72298727,
+  "electronVersion": "37.10.3",
+  "notes": null,
+  "publishedAt": "2026-09-29T18:44:39.669Z"
+}
