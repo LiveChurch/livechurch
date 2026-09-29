@@ -26,6 +26,8 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /livechurch
       - uses: actions/upload-pages-artifact@v3
         with:
           path: landing/out

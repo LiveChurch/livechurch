@@ -1,3 +1,5 @@
+import { BasePathUtils } from "@/core/utils/BasePathUtils";
+
 interface PhotoBackdropProps {
   src: string;
   mono?: boolean;
@@ -10,7 +12,7 @@ export function PhotoBackdrop({ src, mono, position = "center" }: PhotoBackdropP
     <div className="grain pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
       <div
         className={`absolute inset-0 bg-cover ${mono ? "grayscale" : ""}`}
-        style={{ backgroundImage: `url(/${src})`, backgroundPosition: position, opacity: "var(--photo-opacity)" }}
+        style={{ backgroundImage: `url(${BasePathUtils.url(`/${src}`)})`, backgroundPosition: position, opacity: "var(--photo-opacity)" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-page/30 via-page/60 to-page" />
     </div>
